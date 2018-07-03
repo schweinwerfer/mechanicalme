@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="main" />
+        <module name="mechanicalme" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="main" target="1.5" />
+      <module name="mechanicalme" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

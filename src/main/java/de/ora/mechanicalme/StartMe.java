@@ -1,6 +1,7 @@
 package de.ora.mechanicalme;
 
 import java.awt.*;
+import java.io.IOException;
 import java.util.Random;
 
 public class StartMe {
@@ -8,7 +9,8 @@ public class StartMe {
     private Point last;
     private Random rnd;
 
-    public StartMe() throws AWTException, InterruptedException {
+    public StartMe() throws AWTException, InterruptedException, IOException {
+        Gui gui = new Gui();
         rnd = new Random();
         robot = new Robot();
         while (true) {
@@ -28,7 +30,7 @@ public class StartMe {
         }
     }
 
-    public static void main(String[] input) throws AWTException, InterruptedException {
+    public static void main(String[] input) throws AWTException, InterruptedException, IOException {
         StartMe startMe = new StartMe();
 
     }
