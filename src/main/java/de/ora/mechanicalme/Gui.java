@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.net.URL;
 
-public class Gui {
+class Gui {
 
-    public Gui() throws IOException {
+    Gui() throws IOException {
         TrayIcon trayIcon = null;
         if (SystemTray.isSupported()) {
             // get the SystemTray instance
